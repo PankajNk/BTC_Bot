@@ -1,18 +1,18 @@
-# BTC_Bot
+# Binance BTC Bot
 
-# Prerequisites
+### Prerequisites
+**Python 3**
 
-##**Python**
-
+### Clone To Local Machine
 ```
 git clone https://github.com/PankajNk/BTC_Bot.git
 ```
 
-# Installation 
+## Installation 
 ```shell
 pip install -r requirements.txt
 ```
-# Running Script in CMD Propmt
+## Running Script in CMD Propmt
 ```shell
 python Cron_BTC_Bot.py
 ```
