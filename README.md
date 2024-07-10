@@ -5,7 +5,7 @@
 
 ### Clone To Local Machine
 ```
-git clone https://github.com/PankajNk/BTC_Bot.git
+git clone https://github.com/PankajNk/Binance_BTC_Bot.git
 ```
 
 ## Installation 
