@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ```
 ## Running Script in CMD Propmt
 ```shell
-python Cron_BTC_Bot.py
+python Binance_Bot.py 
 ```
 
 ## If you face issue while Installing Playwright
