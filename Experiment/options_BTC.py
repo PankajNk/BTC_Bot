@@ -4,6 +4,8 @@ import schedule
 import csv
 import numpy as np
 from playwright.sync_api import sync_playwright
+import gspread
+from google.oauth2.service_account import Credentials
 
 def job():
     print("Running job...")
