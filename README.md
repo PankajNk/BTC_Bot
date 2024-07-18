@@ -19,6 +19,7 @@ git clone https://github.com/PankajNk/Binance_BTC_Bot.git
 ```
 cd /your_path/Binance_BTC_Bot
 ```
+
 ## Install directly
 ```shell
 python install.py
