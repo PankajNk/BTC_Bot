@@ -2,6 +2,13 @@
 
 ### Prerequisites
 **Python 3**
+## Steps
+* Keep **sheet_credentials.json** (Secrets) file on Real_Time_Binance_Bot Folder
+* Create Google Sheet
+* Share with Service Account: 
+```
+btcbot@binance-btc-bot.iam.gserviceaccount.com
+```
 
 ### Clone To Local Machine
 ```
@@ -20,8 +27,13 @@ python install.py
 ```shell
 python Real_Time_Binance_Bot/Binance_Bot.py 
 ```
-
-##You can follow only if you have issues [Optional]
+**Enter the Sheet ID of your Google-Sheet**
+####example:
+![Sheet ID](assets/sheetID.png)
+```
+Enter Sheet ID: 1_DXmHi5dFlKQTFYq979PITfYxq7jIQisA7GF_Mk3s5Q
+```
+## You can follow only if you have any issues [Optional]
 ## Installation step by step
 ```shell
 pip install -r requirements.txt

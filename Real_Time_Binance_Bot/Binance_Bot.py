@@ -12,8 +12,8 @@ from spot_future_data import spot_future_data
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 creds = Credentials.from_service_account_file("Real_Time_Binance_Bot/sheet_credentials.json", scopes=scopes)
 client = gspread.authorize(creds)
-sheet_id = "1_DXmHi5dFlKQTFYq979PITfYxq7jIQisA7GF_Mk3s5Q"
-# sheet_id = input("Enter Sheet ID: ")
+# sheet_id = "1_DXmHi5dFlKQTFYq979PITfYxq7jIQisA7GF_Mk3s5Q"
+sheet_id = input("Enter Sheet ID: ")
 workbook = client.open_by_key(sheet_id)
 
 worksheet_titles = [sheet.title for sheet in workbook.worksheets()]
