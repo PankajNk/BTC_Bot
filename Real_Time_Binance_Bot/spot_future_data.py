@@ -1,8 +1,8 @@
 import time
 
-def spot_future_data(page):
+def spot_future_data(page, CRYPTO_NAME):
         # spot scraping
-        binance_url = "https://www.binance.com/en/trade/BTC_USDT?_from=markets&type=spot"
+        binance_url = f"https://www.binance.com/en/trade/{CRYPTO_NAME}?_from=markets&type=spot"
         page.goto(binance_url, wait_until="load")
         
         current_price = page.wait_for_selector("//div[@class='subPrice']").text_content()
@@ -11,10 +11,10 @@ def spot_future_data(page):
         spot_data_list = page.locator("//div[@class='tickerPriceText']").all_text_contents()
         
         spot_row = [current_price] + spot_data_list
-        print("Scraping Spot data: ", spot_row)        
+        print(f"\033[1;34mLatest Spot data: {spot_row}\033[0m")        
 
         # Future Scrape
-        future_url = "https://www.binance.com/en/futures/BTCUSDT"
+        future_url = f"https://www.binance.com/en/futures/{CRYPTO_NAME}"
         page.goto(future_url, wait_until="load")
 
         #MainBTCUSDT data
@@ -29,7 +29,8 @@ def spot_future_data(page):
         # Extract text from the elements
         future_row = current_future_price + [el.inner_text().strip() for el in value_elements]
      
-        print("Scraping Future Data: ", future_row)
+        print(f"\033[1;35mLatest Future Data: {future_row}\033[0m")        
+
         
         return (spot_row, future_row)
         

@@ -1,4 +1,5 @@
 schedule
+requests
 playwright
 numpy
 gspread 
