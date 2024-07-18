@@ -34,6 +34,7 @@ python Real_Time_Binance_Bot/Binance_Bot.py
 ![Sheet ID](assets/sheetID.png)
 ```
 Enter Sheet ID: 1_DXmHi5dFlKQTFYq979PITfYxq7jIQisA7GF_Mk3s5Q
+Enter Crypto Name: ETHUSDT (or any Crypto available on Binance)
 ```
 ## You can follow only if you have any issues [Optional]
 ## Installation step by step
