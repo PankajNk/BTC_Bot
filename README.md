@@ -7,13 +7,18 @@
 ```
 git clone https://github.com/PankajNk/Binance_BTC_Bot.git
 ```
+
+### Go To Root of the Project Folder
+```
+cd /your_path/Binance_BTC_Bot
+```
 ## Install directly
 ```shell
 python install.py
 ```
 ## Running Script in CMD Propmt
 ```shell
-python Binance_Bot.py 
+python Real_Time_Binance_Bot/Binance_Bot.py 
 ```
 
 ##You can follow only if you have issues [Optional]
