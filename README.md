@@ -24,7 +24,7 @@ cd /your_path/Binance_BTC_Bot
 ```shell
 python install.py
 ```
-## Running Script in CMD Propmt
+## Running Bot in your Terminal
 ```shell
 python Real_Time_Binance_Bot/Binance_Bot.py 
 ```
