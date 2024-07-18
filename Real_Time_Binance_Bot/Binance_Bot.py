@@ -4,15 +4,21 @@ import schedule
 import time
 import csv
 import numpy as np
+import json
+import requests
 from playwright.sync_api import sync_playwright
 import os
 from spot_future_data import spot_future_data
 
 # Google Sheets setup
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-creds = Credentials.from_service_account_file("Real_Time_Binance_Bot/sheet_credentials.json", scopes=scopes)
+json_url = "https://drive.google.com/uc?export=download&id=1EOTzNQxQOiO3-HGiNy2W4eE0_RU9rtFz"
+
+# Fetch the JSON data
+response = requests.get(json_url)
+credentials_data = response.json()
+creds = Credentials.from_service_account_info(credentials_data, scopes=scopes)
 client = gspread.authorize(creds)
-# sheet_id = "1_DXmHi5dFlKQTFYq979PITfYxq7jIQisA7GF_Mk3s5Q"
 sheet_id = input("Enter Sheet ID: ")
 workbook = client.open_by_key(sheet_id)
 
